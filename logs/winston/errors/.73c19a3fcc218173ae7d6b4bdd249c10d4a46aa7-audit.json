@@ -1,0 +1,60 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "F:\\Programming-hero lavel-2\\University-Management-Project\\logs\\winston\\errors\\.73c19a3fcc218173ae7d6b4bdd249c10d4a46aa7-audit.json",
+    "files": [
+        {
+            "date": 1694091798810,
+            "name": "F:\\Programming-hero lavel-2\\University-Management-Project\\logs\\winston\\errors\\errors-2023-07-09-19.log",
+            "hash": "3c1c3fd7504b4234d57628687bd64484932499737a078a765286328fd091c1c3"
+        },
+        {
+            "date": 1694098340820,
+            "name": "F:\\Programming-hero lavel-2\\University-Management-Project\\logs\\winston\\errors\\errors-2023-07-09-20.log",
+            "hash": "fc8876d1cdcdb542cbfeb5afc8fe5c89d8f7bb0bf652aa3bb8513fe350dda2d5"
+        },
+        {
+            "date": 1694101019773,
+            "name": "F:\\Programming-hero lavel-2\\University-Management-Project\\logs\\winston\\errors\\errors-2023-07-09-21.log",
+            "hash": "1262aa4488dbaced7be6ac1e4ec23894604c53a339733fc7d7b92988938f3402"
+        },
+        {
+            "date": 1694102576548,
+            "name": "F:\\Programming-hero lavel-2\\University-Management-Project\\logs\\winston\\errors\\errors-2023-07-09-22.log",
+            "hash": "08e5a8a7cc8b2c528a8ced3486fbfadae7360ed0d6c0886c41157797124bd322"
+        },
+        {
+            "date": 1694107695545,
+            "name": "F:\\Programming-hero lavel-2\\University-Management-Project\\logs\\winston\\errors\\errors-2023-07-09-23.log",
+            "hash": "3fa3e334b317a68f95e82406d6ea03d161e8f177642003cb282e8264b81dd61b"
+        },
+        {
+            "date": 1694109615627,
+            "name": "F:\\Programming-hero lavel-2\\University-Management-Project\\logs\\winston\\errors\\errors-2023-08-09-00.log",
+            "hash": "db295acb69d4d9c63cfaede4399d69881d68e4f48d73574659640c7cc7150bc9"
+        },
+        {
+            "date": 1694113400445,
+            "name": "F:\\Programming-hero lavel-2\\University-Management-Project\\logs\\winston\\errors\\errors-2023-08-09-01.log",
+            "hash": "e88fda65fbdac897c0bb3b2be52d934a8e350a1483ccb78f8fdc69ca79238cfa"
+        },
+        {
+            "date": 1694193137502,
+            "name": "F:\\Programming-hero lavel-2\\University-Management-Project\\logs\\winston\\errors\\errors-2023-08-09-23.log",
+            "hash": "17e0da2a6a54e263ba1789dc0cefde9eeb61ee814d99883aac6d640b917b5236"
+        },
+        {
+            "date": 1694196018002,
+            "name": "F:\\Programming-hero lavel-2\\University-Management-Project\\logs\\winston\\errors\\errors-2023-09-09-00.log",
+            "hash": "7010f2272f5576f27b35bb3a0d4b220acaaf0cd36df7bfac4794ab91c7db9a9f"
+        },
+        {
+            "date": 1694239779916,
+            "name": "F:\\Programming-hero lavel-2\\University-Management-Project\\logs\\winston\\errors\\errors-2023-09-09-12.log",
+            "hash": "fa72fc8886eea0e07f54db9749d96406c8d962516b81f4a9962e4b2c7f6c81df"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -1,14 +1,18 @@
-import express, { Application, Request, Response } from 'express'
-import cors from 'cors'
-const app: Application = express()
+import express, { Application } from 'express';
 
-app.use(cors())
-// body_parser
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+import cors from 'cors';
+import globalErrorHandler from './app/middlewars/globalErrorHandler';
 
-app.get('/', (req: Request, res: Response) => {
-  res.send('Hello World!')
-})
+import router from './app/routes';
 
-export default app
+const app: Application = express();
+
+app.use(cors());
+
+app.use(express.json());
+//using for recieving all format data like objects and arrays
+app.use(express.urlencoded({ extended: true }));
+app.use('/api/v1', router);
+
+app.use(globalErrorHandler);
+export default app;
