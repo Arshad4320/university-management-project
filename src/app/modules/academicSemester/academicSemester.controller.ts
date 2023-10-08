@@ -57,8 +57,38 @@ const getSingleSemester: RequestHandler = async (req, res, next) => {
     next(error);
   }
 };
+// Academic semester update
+const updateSemester: RequestHandler = async (req, res, next) => {
+  try {
+    const id = req.params.id;
+    const updateData = req.body;
+    const result = await AcademicSemesterService.updateSemester(id, updateData);
+    res.status(httpStatus.OK).json({
+      success: true,
+      message: 'semester updated successfully',
+      data: result,
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+const deleteSemester: RequestHandler = async (req, res, next) => {
+  try {
+    const id = req.params.id;
+    const result = await AcademicSemesterService.deleteSemester(id);
 
+    res.status(httpStatus.OK).json({
+      success: true,
+      message: 'semester deleted successfully',
+      data: result,
+    });
+  } catch (error) {
+    next(error);
+  }
+};
 export const AcademicSemesterController = {
+  deleteSemester,
+  updateSemester,
   createSemester,
   getAllSemester,
   getSingleSemester,

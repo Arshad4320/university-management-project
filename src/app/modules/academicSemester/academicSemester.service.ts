@@ -10,6 +10,8 @@ import {
 } from './academicSemester.interface';
 import { AcademicSemester } from './academicSemester.model';
 import httpStatus from 'http-status';
+
+//semester create
 const createSemester = async (
   payload: IAcademicSemester,
 ): Promise<IAcademicSemester> => {
@@ -92,7 +94,34 @@ const getSingleSemester = async (
   return result;
 };
 
+const updateSemester = async (
+  id: string,
+  payload: Partial<IAcademicSemester>,
+): Promise<IAcademicSemester | null> => {
+  if (
+    payload.title &&
+    payload.code &&
+    academicSemesterCodeMapper[payload.title] !== payload.code
+  ) {
+    throw new ApiError(httpStatus.BAD_REQUEST, 'Invalid semester code ');
+  }
+  const result = await AcademicSemester.findByIdAndUpdate(
+    { _id: id },
+    payload,
+    { new: true },
+  );
+  return result;
+};
+
+const deleteSemester = async (
+  id: string,
+): Promise<IAcademicSemester | null> => {
+  const result = await AcademicSemester.findByIdAndDelete(id);
+  return result;
+};
 export const AcademicSemesterService = {
+  deleteSemester,
+  updateSemester,
   createSemester,
   getAllSemester,
   getSingleSemester,
